@@ -8,7 +8,6 @@
 //     "token": "admin"
 //   }'
 
-
 import { ConvexHttpClient } from "convex/browser";
 import { api } from "@/convex/_generated/api";
 import { NextRequest, NextResponse } from "next/server";
@@ -59,7 +58,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const userId = await convex.action(api.auth.index.createUser, {
+    const userId = await convex.action(api.auth.createUser, {
       email,
       name,
       phoneNumber,
