@@ -1,8 +1,8 @@
 "use client";
 
-import { BookingsList } from "@/components/interfaces/guest/bookings/bookings-list";
+import { FrontdeskBookingsList } from "@/components/interfaces/frontdesk";
 
 export default function BookingsPage() {
-  return <BookingsList />;
+  return <FrontdeskBookingsList />;
 }
 
